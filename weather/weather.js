@@ -5,7 +5,7 @@ const apikey = "212d4143e34ad12968a26aaad17ddf89";
 module.exports.getWeather = (latitude, longitude, callback) => {
   request(
     {
-      url: `https://api.darksky.net/forecast/${apikey}/${latitude},${longitude}`,
+      url: `https://api.darksky.net/forecast/${apikey}/${latitude},${longitude}?units=si`,
       json: true
     },
     (error, response, body) => {
