@@ -10,13 +10,18 @@ geocode.geocodeAddress(argv.address, (error, result) => {
   if (error) {
     console.log(error);
   } else {
-    console.log(JSON.stringify(result, undefined, 2));
+    console.log(`Address: ${result.address}\n--------------------------`);
     weather.getWeather(result.latitude, result.longitude, (error, result) => {
       if (error) {
         console.log(error);
       } else {
-        console.log(JSON.stringify(result));
-        console.log(`It's currently ${result.temperature} fahrenheit.`);
+        console.log(
+          `Temperature: ${result.temperature} °C\nApparent Temperature: ${
+            result.apparentTemperature
+          } °C\nPressure: ${result.pressure} Pa\nPrecipitation Probability: ${
+            result.precipProbability*100
+          } %\n`
+        );
       }
     });
   }
