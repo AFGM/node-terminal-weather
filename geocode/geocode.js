@@ -8,7 +8,7 @@ module.exports.geocodeAddress = (address, callback) => {
       json: true
     },
     (error, response, body) => {
-      if (error || body.status === "OVER_QUERY_LIMIT" || body.results === 0) {
+      if (error || body.status === "OVER_QUERY_LIMIT" || body.results.length === 0) {
         callback("Unable to connect to google servers... Try again!");
       } else if (body.status === "ZERO_RESULTS") {
         callback("Unable to find that address.");

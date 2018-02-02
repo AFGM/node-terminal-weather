@@ -6,7 +6,7 @@ const argv = yargs
             demand: true,
             alias: "address",
             describe:"Address to fetch weather",
-            string: true,
+            string: true
         }
     })
     .help()
