@@ -15,6 +15,7 @@ geocode.geocodeAddress(argv.address, (error, result) => {
       if (error) {
         console.log(error);
       } else {
+        console.log(JSON.stringify(result));
         console.log(`It's currently ${result.temperature} fahrenheit.`);
       }
     });
