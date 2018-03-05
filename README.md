@@ -1,8 +1,8 @@
 <p align="center">
-  <img width="250" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" />
+  <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" />
 </p>
 
-[![Build Status](https://travis-ci.org/AFGM/node-terminal-weather.svg?branch=master)](https://travis-ci.org/AFGM/node-terminal-weather)
+[![Build Status](https://travis-ci.org/andremartingo/node-terminal-weather.svg?branch=master)](https://travis-ci.org/AFGM/node-terminal-weather)
 
 # Node.js Weather Terminal App
 Node script to fetch weather based on a string.
