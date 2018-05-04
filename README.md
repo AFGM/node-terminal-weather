@@ -17,13 +17,13 @@ It fetches the geolocation of that string in Google Maps API and then passes tha
 
 ## Instalation
 ```bash
-$ git clone git@github.com:AFGM/node-terminal-weather.git
-$ cd node-terminal-weather
-$ npm install
+git clone https://github.com/andremartingo/node-terminal-weather.git
+cd node-terminal-weather
+npm install
 ```
 ## Usage
 ```bash
-$ node app.js -a "some address or zip code or place"
+node app.js -a "some address or zip code or place"
 ```
 ## Demo
 <img width="600" height="200" title="Size Limit logo" src="./demo.gif">
